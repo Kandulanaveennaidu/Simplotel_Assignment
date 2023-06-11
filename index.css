@@ -7,10 +7,7 @@
   justify-content: center;
   gap: 60px;
   align-items: center;
-  justify-content: center;
   border-bottom: 1px solid #eaeaea;
-  align-items: center;
-  justify-content: center;
 }
 
 .navbar li {
@@ -21,22 +18,16 @@
   font-weight: bold;
   border-radius: 3px;
   transition: background-color 0.3s;
-  align-items: center;
-  justify-content: center;
 }
 
 .navbar a {
   text-decoration: none;
   color: black;
-  align-items: center;
-  justify-content: center;
 }
 
 .navbar i {
   font-size: 20px;
   margin-right: 5px;
-  align-items: center;
-  justify-content: center;
 }
 
 .navbar li:hover {
@@ -47,9 +38,6 @@
   background-color: white;
   padding: 50px;
   text-align: center;
-  padding: 10px 20px;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-section img {
@@ -61,7 +49,6 @@
 .hero-section .text-container {
   text-align: center;
   padding: 10px 20px;
-  justify-content: center;
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -96,13 +83,13 @@
   align-items: center;
   justify-content: center;
 }
+
 .order1 {
   padding: 20px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   color: white;
 }
+
 .order-container {
   display: flex;
   gap: 5px;
@@ -123,26 +110,18 @@
   height: 200px;
   border-radius: 15px;
   transition: transform 0.3s;
-  align-items: center;
-  justify-content: center;
 }
 
 .order-item:hover img {
   transform: scale(1.1);
-  align-items: center;
-  justify-content: center;
 }
 
 .order-item h3 {
   margin: 10px 0;
-  align-items: center;
-  justify-content: center;
   color: black;
   font-size: 24px;
   font-weight: bold;
   border-radius: 3px;
-  align-items: center;
-  justify-content: center;
 }
 
 .order-button {
@@ -154,12 +133,101 @@
   border-radius: 30px;
   transition: background-color 0.3s;
   margin-top: 20px;
-  align-items: center;
-  justify-content: center;
 }
 
 .order-button:hover {
   background-color: green;
-  align-items: center;
-  justify-content: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .navbar li {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .navbar i {
+    font-size: 16px;
+    margin-right: 3px;
+  }
+
+  .hero-section h2 {
+    font-size: 32px;
+  }
+
+  .hero-section .learn-text {
+    font-size: 18px;
+  }
+
+  .hero-section .lorem-text {
+    font-size: 14px;
+  }
+
+  .order-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .order-item h3 {
+    font-size: 20px;
+  }
+
+  .order-button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar li {
+    font-size: 18px;
+  }
+
+  .navbar i {
+    font-size: 18px;
+    margin-right: 4px;
+  }
+
+  .hero-section h2 {
+    font-size: 40px;
+  }
+
+  .hero-section .learn-text {
+    font-size: 22px;
+  }
+
+  .hero-section .lorem-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    gap: 100px;
+  }
+
+  .navbar li {
+    padding: 10px;
+  }
+
+  .navbar i {
+    margin-right: 6px;
+  }
+
+  .hero-section h2 {
+    font-size: 48px;
+  }
+
+  .hero-section .learn-text {
+    font-size: 24px;
+  }
+
+  .hero-section .lorem-text {
+    font-size: 18px;
+  }
 }
